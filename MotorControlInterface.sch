@@ -1,0 +1,458 @@
+EESchema Schematic File Version 2
+LIBS:MotorPosition-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:naxxfish-library
+LIBS:MotorPosition-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 10
+Title ""
+Date "14 June 2015"
+Rev "2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C11
+U 1 1 557E0CB9
+P 8750 4300
+F 0 "C11" H 8775 4400 50  0000 L CNN
+F 1 "0.1uF" H 8500 4400 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8788 4150 30  0001 C CNN
+F 3 "" H 8750 4300 60  0000 C CNN
+	1    8750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 557E0D2C
+P 8750 3900
+F 0 "C12" H 8775 4000 50  0000 L CNN
+F 1 "0.47u" H 8500 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8788 3750 30  0001 C CNN
+F 3 "" H 8750 3900 60  0000 C CNN
+	1    8750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 557E0D7A
+P 6600 4100
+F 0 "C8" H 6625 4200 50  0000 L CNN
+F 1 "0.047u" V 6800 4000 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6638 3950 30  0001 C CNN
+F 3 "" H 6600 4100 60  0000 C CNN
+	1    6600 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L C C9
+U 1 1 557E0DB0
+P 6650 4600
+F 0 "C9" H 6675 4700 50  0000 L CNN
+F 1 "0.047u" V 6850 4500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6688 4450 30  0001 C CNN
+F 3 "" H 6650 4600 60  0000 C CNN
+	1    6650 4600
+	-1   0    0    1   
+$EndComp
+Text HLabel 8700 3250 2    60   Input ~ 0
+MC_RX_OUT
+Text HLabel 8700 3350 2    60   Input ~ 0
+MC_TX_OUT
+NoConn ~ 8275 4900
+NoConn ~ 8275 4800
+Text HLabel 3300 4250 0    60   Input ~ 0
+MC_RST_OUT
+Text HLabel 4750 3750 2    60   Input ~ 0
+MC_ERR_IN
+Text HLabel 3200 3650 0    60   Input ~ 0
+MC_ERR_READ
+Text HLabel 4700 4350 2    60   Input ~ 0
+MC_RST
+Text HLabel 6550 3400 0    60   Input ~ 0
+MC_RX
+$Comp
+L +5V #PWR015
+U 1 1 55A809A2
+P 7650 2600
+F 0 "#PWR015" H 7650 2450 50  0001 C CNN
+F 1 "+5V" H 7650 2740 50  0000 C CNN
+F 2 "" H 7650 2600 60  0000 C CNN
+F 3 "" H 7650 2600 60  0000 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR016
+U 1 1 55A80A38
+P 6500 5700
+F 0 "#PWR016" H 6500 5450 50  0001 C CNN
+F 1 "GND" H 6500 5550 50  0000 C CNN
+F 2 "" H 6500 5700 60  0000 C CNN
+F 3 "" H 6500 5700 60  0000 C CNN
+	1    6500 5700
+	1    0    0    -1  
+$EndComp
+Text HLabel 6550 3300 0    60   Input ~ 0
+MC_TX
+$Comp
+L C C6
+U 1 1 55A8A79C
+P 7750 5450
+F 0 "C6" H 7775 5550 50  0000 L CNN
+F 1 "10n" H 7400 5500 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7788 5300 30  0001 C CNN
+F 3 "" H 7750 5450 60  0000 C CNN
+	1    7750 5450
+	0    1    1    0   
+$EndComp
+$Comp
+L C C7
+U 1 1 55A8A7DE
+P 9350 4850
+F 0 "C7" H 9375 4950 50  0000 L CNN
+F 1 "2.2u" H 9150 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9388 4700 30  0001 C CNN
+F 3 "" H 9350 4850 60  0000 C CNN
+	1    9350 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 55A8A812
+P 9800 4850
+F 0 "C10" H 9825 4950 50  0000 L CNN
+F 1 "0.47u" H 9550 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 9838 4700 30  0001 C CNN
+F 3 "" H 9800 4850 60  0000 C CNN
+	1    9800 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C16
+U 1 1 55A8AB07
+P 10250 4850
+F 0 "C16" H 10275 4950 50  0000 L CNN
+F 1 "0.47u" H 10000 4950 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 10288 4700 30  0001 C CNN
+F 3 "" H 10250 4850 60  0000 C CNN
+	1    10250 4850
+	1    0    0    -1  
+$EndComp
+Text HLabel 8750 5450 2    60   Input ~ 0
+MC_GND
+NoConn ~ 6750 3500
+NoConn ~ 6750 3600
+NoConn ~ 8550 3550
+NoConn ~ 8550 3450
+$Comp
+L C C5
+U 1 1 55A8BBFD
+P 5600 2300
+F 0 "C5" H 5625 2400 50  0000 L CNN
+F 1 "1U" H 5450 2200 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5638 2150 30  0001 C CNN
+F 3 "" H 5600 2300 60  0000 C CNN
+	1    5600 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR017
+U 1 1 55A8BD80
+P 5600 2100
+F 0 "#PWR017" H 5600 1950 50  0001 C CNN
+F 1 "+5V" H 5600 2240 50  0000 C CNN
+F 2 "" H 5600 2100 60  0000 C CNN
+F 3 "" H 5600 2100 60  0000 C CNN
+	1    5600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 55A8BDF7
+P 5600 2600
+F 0 "#PWR018" H 5600 2350 50  0001 C CNN
+F 1 "GND" H 5600 2450 50  0000 C CNN
+F 2 "" H 5600 2600 60  0000 C CNN
+F 3 "" H 5600 2600 60  0000 C CNN
+	1    5600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 55A8BFB3
+P 6550 2800
+F 0 "R6" V 6630 2800 50  0000 C CNN
+F 1 "10K" V 6550 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6480 2800 30  0001 C CNN
+F 3 "" H 6550 2800 30  0000 C CNN
+	1    6550 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR019
+U 1 1 55A8C089
+P 6550 2600
+F 0 "#PWR019" H 6550 2450 50  0001 C CNN
+F 1 "+5V" H 6550 2740 50  0000 C CNN
+F 2 "" H 6550 2600 60  0000 C CNN
+F 3 "" H 6550 2600 60  0000 C CNN
+	1    6550 2600
+	1    0    0    -1  
+$EndComp
+Text HLabel 6150 3050 0    60   Input ~ 0
+MC_SHDN
+Text HLabel 6150 3150 0    60   Input ~ 0
+MC_FAULT
+$Comp
+L LTV-846S U3
+U 1 1 55A9E0F0
+P 3850 4550
+F 0 "U3" H 4000 4750 50  0000 L CNN
+F 1 "LTV-846S" H 3650 3500 50  0000 L CNN
+F 2 "naxxfish-footprints:LTV-846S" H 3100 3300 50  0001 L CIN
+F 3 "" H 3850 4550 50  0000 L CNN
+	1    3850 4550
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 55A9E8C6
+P 4400 3750
+F 0 "R4" V 4480 3750 50  0000 C CNN
+F 1 "330R" V 4400 3750 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4330 3750 30  0001 C CNN
+F 3 "" H 4400 3750 30  0000 C CNN
+	1    4400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 55A9EA95
+P 3400 4900
+F 0 "#PWR020" H 3400 4650 50  0001 C CNN
+F 1 "GND" H 3400 4750 50  0000 C CNN
+F 2 "" H 3400 4900 60  0000 C CNN
+F 3 "" H 3400 4900 60  0000 C CNN
+	1    3400 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 55A9EDFF
+P 3300 3450
+F 0 "R3" V 3380 3450 50  0000 C CNN
+F 1 "10K" V 3300 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 3450 30  0001 C CNN
+F 3 "" H 3300 3450 30  0000 C CNN
+	1    3300 3450
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR021
+U 1 1 55A9EEE6
+P 3300 3200
+F 0 "#PWR021" H 3300 3050 50  0001 C CNN
+F 1 "+5V" H 3300 3340 50  0000 C CNN
+F 2 "" H 3300 3200 60  0000 C CNN
+F 3 "" H 3300 3200 60  0000 C CNN
+	1    3300 3200
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 3550 2    60   Input ~ 0
+MC_GND
+$Comp
+L R R5
+U 1 1 55A9F365
+P 4500 4350
+F 0 "R5" V 4580 4350 50  0000 C CNN
+F 1 "330R" V 4500 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4430 4350 30  0001 C CNN
+F 3 "" H 4500 4350 30  0000 C CNN
+	1    4500 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 55A9FA2D
+P 4300 4500
+F 0 "#PWR022" H 4300 4250 50  0001 C CNN
+F 1 "GND" H 4300 4350 50  0000 C CNN
+F 2 "" H 4300 4500 60  0000 C CNN
+F 3 "" H 4300 4500 60  0000 C CNN
+	1    4300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4950 6500 4950
+Wire Wire Line
+	6500 4950 6500 5700
+Wire Wire Line
+	6750 4800 6650 4800
+Wire Wire Line
+	6650 4800 6650 4750
+Wire Wire Line
+	6650 4450 6750 4450
+Wire Wire Line
+	6750 4250 6600 4250
+Wire Wire Line
+	6600 3950 6750 3950
+Wire Wire Line
+	8750 4450 8550 4450
+Wire Wire Line
+	8550 4150 8750 4150
+Wire Wire Line
+	8750 4050 8550 4050
+Wire Wire Line
+	8750 3750 8750 3700
+Wire Wire Line
+	8750 3700 8550 3700
+Wire Wire Line
+	7650 2700 7650 2600
+Wire Wire Line
+	6550 3300 6750 3300
+Wire Wire Line
+	6750 3400 6550 3400
+Wire Wire Line
+	8700 3250 8550 3250
+Wire Wire Line
+	8550 3350 8700 3350
+Wire Wire Line
+	7900 5450 8750 5450
+Wire Wire Line
+	8650 5450 8650 5000
+Wire Wire Line
+	8550 5000 10250 5000
+Wire Wire Line
+	7600 5450 6500 5450
+Connection ~ 6500 5450
+Connection ~ 8650 5000
+Connection ~ 9350 5000
+Connection ~ 9800 5000
+Wire Wire Line
+	9350 4700 9050 4700
+Wire Wire Line
+	9050 4700 9050 4800
+Wire Wire Line
+	9050 4800 8550 4800
+Wire Wire Line
+	9800 4700 9500 4700
+Wire Wire Line
+	9500 4700 9500 4650
+Wire Wire Line
+	9500 4650 8650 4650
+Wire Wire Line
+	8650 4650 8650 4700
+Wire Wire Line
+	8650 4700 8550 4700
+Wire Wire Line
+	10250 4700 10250 4600
+Wire Wire Line
+	10250 4600 8550 4600
+Connection ~ 8650 5450
+Wire Wire Line
+	5600 2600 5600 2450
+Wire Wire Line
+	5600 2150 5600 2100
+Wire Wire Line
+	6550 2650 6550 2600
+Wire Wire Line
+	4750 3750 4550 3750
+Wire Wire Line
+	4250 3750 4150 3750
+Wire Wire Line
+	4150 4150 4300 4150
+Wire Wire Line
+	3550 3550 3400 3550
+Wire Wire Line
+	3400 3550 3400 4900
+Wire Wire Line
+	3200 3650 3550 3650
+Wire Wire Line
+	3300 3600 3300 3650
+Connection ~ 3300 3650
+Wire Wire Line
+	3300 3300 3300 3200
+Wire Wire Line
+	4350 4350 4150 4350
+Wire Wire Line
+	4650 4350 4700 4350
+Wire Wire Line
+	4300 3550 4150 3550
+Wire Wire Line
+	3300 4250 3550 4250
+Wire Wire Line
+	4250 3550 4250 2900
+Wire Wire Line
+	4250 2900 2350 2900
+Wire Wire Line
+	2350 2900 2350 4150
+Wire Wire Line
+	2350 4150 3550 4150
+Connection ~ 4250 3550
+Wire Wire Line
+	4300 4150 4300 4500
+$Comp
+L MAX3250 U4
+U 1 1 55A88F24
+P 7650 3800
+F 0 "U4" H 8300 2450 60  0000 C CNN
+F 1 "MAX3250" H 7650 3800 60  0000 C CNN
+F 2 "naxxfish-footprints:MAXIM-SSOP28" H 7400 3850 60  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX3250.pdf" H 8300 2450 60  0000 C CNN
+	1    7650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3050 6750 3050
+Wire Wire Line
+	6150 3150 6750 3150
+Wire Wire Line
+	6550 3150 6550 2950
+Connection ~ 6550 3150
+Wire Wire Line
+	6650 2650 6650 3050
+Wire Wire Line
+	6650 2650 7650 2650
+Connection ~ 7650 2650
+Connection ~ 6650 3050
+Text GLabel 8750 4900 2    60   Input ~ 0
+MC_VCC
+Wire Wire Line
+	8750 4900 8750 4800
+Connection ~ 8750 4800
+$EndSCHEMATC

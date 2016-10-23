@@ -1,0 +1,192 @@
+Cmp-Mod V01 Created by Cvpcb (after 2015-may-25 BZR unknown)-product   date = 06/09/2015 15:27:12
+
+BeginCmp
+TimeStamp = /557CAF5F;
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /557CB11E;
+Reference = C2;
+ValeurCmp = 47uF;
+IdModule  = Capacitors_Elko_ThroughHole:Elko_vert_11x5mm_RM2;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B4119A;
+Reference = C3;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B4166F;
+Reference = C4;
+ValeurCmp = 1uF;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B385DA;
+Reference = C5;
+ValeurCmp = 0.047U;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B38630;
+Reference = C6;
+ValeurCmp = 0.047U;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3BF19;
+Reference = C7;
+ValeurCmp = 10N;
+IdModule  = Capacitors_SMD:C_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B39946;
+Reference = C8;
+ValeurCmp = 0.1U;
+IdModule  = Capacitors_SMD:C_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B39A89;
+Reference = C9;
+ValeurCmp = 0.47U;
+IdModule  = Capacitors_SMD:C_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3956C;
+Reference = C10;
+ValeurCmp = 2.2U;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B396FF;
+Reference = C11;
+ValeurCmp = 0.47;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3978F;
+Reference = C12;
+ValeurCmp = 0.47;
+IdModule  = Capacitors_SMD:C_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /557D1848;
+Reference = D1;
+ValeurCmp = PWR;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3A137;
+Reference = D2;
+ValeurCmp = TX;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3A047;
+Reference = D3;
+ValeurCmp = RX;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3A27D;
+Reference = D4;
+ValeurCmp = TXIN;
+IdModule  = LEDs:LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /557CF1CE;
+Reference = J1;
+ValeurCmp = TO MASTER;
+IdModule  = naxxfish-footprints:RJ45-RJSE-5080-ND;
+EndCmp
+
+BeginCmp
+TimeStamp = /557CF37F;
+Reference = J2;
+ValeurCmp = FROM DAISYCHAIN;
+IdModule  = naxxfish-footprints:RJ45-RJSE-5080-ND;
+EndCmp
+
+BeginCmp
+TimeStamp = /55994747;
+Reference = P1;
+ValeurCmp = 1WIRECON;
+IdModule  = Connect:PINHEAD1-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /557D196C;
+Reference = R1;
+ValeurCmp = 330R;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3DD87;
+Reference = R2;
+ValeurCmp = 10K;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3A143;
+Reference = R3;
+ValeurCmp = 330R;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3A053;
+Reference = R4;
+ValeurCmp = 330R;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3A289;
+Reference = R5;
+ValeurCmp = 330R;
+IdModule  = Resistors_SMD:R_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B3FC19;
+Reference = U1;
+ValeurCmp = MCP1755S/SOT-223-3;
+IdModule  = naxxfish-footprints:SOT-223-3;
+EndCmp
+
+BeginCmp
+TimeStamp = /559110D3;
+Reference = U2;
+ValeurCmp = POLOLU-SMC18V7;
+IdModule  = naxxfish-footprints:POLOLU-18V15;
+EndCmp
+
+BeginCmp
+TimeStamp = /55B37240;
+Reference = U3;
+ValeurCmp = MAX3250;
+IdModule  = naxxfish-footprints:MAXIM-SSOP28;
+EndCmp
+
+EndListe

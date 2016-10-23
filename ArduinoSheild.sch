@@ -1,0 +1,398 @@
+EESchema Schematic File Version 2
+LIBS:MotorPosition-rescue
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:naxxfish-library
+LIBS:MotorPosition-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 10
+Title ""
+Date ""
+Rev "2"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR039
+U 1 1 558FA149
+P 5300 4850
+F 0 "#PWR039" H 5300 4600 50  0001 C CNN
+F 1 "GND" H 5300 4700 50  0000 C CNN
+F 2 "" H 5300 4850 60  0000 C CNN
+F 3 "" H 5300 4850 60  0000 C CNN
+	1    5300 4850
+	1    0    0    -1  
+$EndComp
+Text HLabel 4300 3450 0    60   Input ~ 0
+DMX_TX
+Text HLabel 4300 3350 0    60   Input ~ 0
+DMX_RX
+Text HLabel 4300 3650 0    60   Input ~ 0
+MOTOR_CTRL_TX
+Text HLabel 4300 3550 0    60   Input ~ 0
+MOTOR_CTRL_RX
+Text HLabel 4300 2750 0    60   Input ~ 0
+CTRL_TX
+Text HLabel 4300 2650 0    60   Input ~ 0
+CTRL_RX
+Text HLabel 8350 3350 2    60   Input ~ 0
+I2C_SDA
+Text HLabel 8350 3250 2    60   Input ~ 0
+I2C_SCL
+$Comp
+L LED-RESCUE-MasterControl D21
+U 1 1 558FB4C3
+P 3675 3150
+AR Path="/558FB4C3" Ref="D21"  Part="1" 
+AR Path="/558F1406/558FB4C3" Ref="D21"  Part="1" 
+F 0 "D21" H 3675 3250 50  0000 C CNN
+F 1 "OK" H 3675 3050 50  0000 C CNN
+F 2 "LEDs:LED-3MM" H 3675 3150 60  0001 C CNN
+F 3 "" H 3675 3150 60  0000 C CNN
+	1    3675 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R93
+U 1 1 558FB57A
+P 4175 3150
+F 0 "R93" V 4255 3150 50  0000 C CNN
+F 1 "330" V 4175 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4105 3150 30  0001 C CNN
+F 3 "" H 4175 3150 30  0000 C CNN
+	1    4175 3150
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR040
+U 1 1 558FB74B
+P 3425 3200
+F 0 "#PWR040" H 3425 2950 50  0001 C CNN
+F 1 "GND" H 3425 3050 50  0000 C CNN
+F 2 "" H 3425 3200 60  0000 C CNN
+F 3 "" H 3425 3200 60  0000 C CNN
+	1    3425 3200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TEENSY3V1 U26
+U 1 1 5582D4DA
+P 5800 3250
+F 0 "U26" H 7050 4250 60  0000 C CNN
+F 1 "TEENSY3V1" H 4950 4250 60  0000 C CNN
+F 2 "naxxfish-footprints:Teensy-3.1" H 5050 2450 60  0001 C CNN
+F 3 "" H 5050 2450 60  0000 C CNN
+	1    5800 3250
+	1    0    0    -1  
+$EndComp
+Text HLabel 7450 3850 2    60   Input ~ 0
+SPI_SCK
+Text HLabel 4300 3750 0    60   Input ~ 0
+SPI_MOSI
+Text HLabel 4300 3850 0    60   Input ~ 0
+SPI_MISO
+NoConn ~ 6250 2150
+Text HLabel 4300 2850 0    60   Input ~ 0
+MOTOR_CTRL_ERR
+Text HLabel 4300 2950 0    60   Input ~ 0
+MOTOR_CTRL_RST
+Text Notes 4700 1500 0    60   ~ 0
+ENSURE VUSB-VIN SOLDER JUMPER IS CUT ON TEENSY!
+NoConn ~ 6050 4700
+NoConn ~ 5950 4700
+Text HLabel 7450 2950 2    60   Input ~ 0
+DMX_EN
+$Comp
+L +5V #PWR041
+U 1 1 5589E1E1
+P 6400 1850
+F 0 "#PWR041" H 6400 1700 50  0001 C CNN
+F 1 "+5V" H 6400 1990 50  0000 C CNN
+F 2 "" H 6400 1850 60  0000 C CNN
+F 3 "" H 6400 1850 60  0000 C CNN
+	1    6400 1850
+	1    0    0    -1  
+$EndComp
+Text HLabel 9300 3450 2    60   Input ~ 0
+BTN_INT
+Text HLabel 9300 3550 2    60   Input ~ 0
+ESTOP
+$Comp
+L R R71
+U 1 1 5590C558
+P 9025 3150
+F 0 "R71" V 9105 3150 50  0000 C CNN
+F 1 "10K" V 9025 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8955 3150 30  0001 C CNN
+F 3 "" H 9025 3150 30  0000 C CNN
+	1    9025 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R72
+U 1 1 5590C629
+P 9225 3150
+F 0 "R72" V 9305 3150 50  0000 C CNN
+F 1 "10K" V 9225 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 9155 3150 30  0001 C CNN
+F 3 "" H 9225 3150 30  0000 C CNN
+	1    9225 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR042
+U 1 1 5590C6E3
+P 9100 2875
+F 0 "#PWR042" H 9100 2725 50  0001 C CNN
+F 1 "+5V" H 9100 3015 50  0000 C CNN
+F 2 "" H 9100 2875 60  0000 C CNN
+F 3 "" H 9100 2875 60  0000 C CNN
+	1    9100 2875
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4550 4050
+NoConn ~ 7250 3150
+$Comp
+L R R73
+U 1 1 5595030B
+P 8150 2950
+F 0 "R73" V 8230 2950 50  0000 C CNN
+F 1 "10K" V 8150 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8080 2950 30  0001 C CNN
+F 3 "" H 8150 2950 30  0000 C CNN
+	1    8150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R74
+U 1 1 5595033B
+P 8300 2950
+F 0 "R74" V 8380 2950 50  0000 C CNN
+F 1 "10K" V 8300 2950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8230 2950 30  0001 C CNN
+F 3 "" H 8300 2950 30  0000 C CNN
+	1    8300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR043
+U 1 1 55950464
+P 8200 2700
+F 0 "#PWR043" H 8200 2550 50  0001 C CNN
+F 1 "+5V" H 8200 2840 50  0000 C CNN
+F 2 "" H 8200 2700 60  0000 C CNN
+F 3 "" H 8200 2700 60  0000 C CNN
+	1    8200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR044
+U 1 1 5590CC48
+P 3425 5050
+F 0 "#PWR044" H 3425 4800 50  0001 C CNN
+F 1 "GND" H 3425 4900 50  0000 C CNN
+F 2 "" H 3425 5050 60  0000 C CNN
+F 3 "" H 3425 5050 60  0000 C CNN
+	1    3425 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR045
+U 1 1 5599F9D1
+P 3450 4100
+F 0 "#PWR045" H 3450 3950 50  0001 C CNN
+F 1 "+3.3V" H 3450 4240 50  0000 C CNN
+F 2 "" H 3450 4100 60  0000 C CNN
+F 3 "" H 3450 4100 60  0000 C CNN
+	1    3450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SDCARD-SPIMODE C24
+U 1 1 559A004C
+P 2850 4600
+F 0 "C24" H 3000 5100 60  0000 C CNN
+F 1 "SDCARD-SPIMODE" V 2700 4550 60  0000 C CNN
+F 2 "naxxfish-footprints:MICROSDCARD-MOLEX-" H 2900 5000 60  0001 C CNN
+F 3 "" H 2850 4100 60  0000 C CNN
+	1    2850 4600
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3250 4950
+Text HLabel 7400 3650 2    60   Input ~ 0
+1WIRE
+Wire Wire Line
+	5300 4700 5300 4850
+Wire Wire Line
+	5400 4700 5400 4800
+Wire Wire Line
+	5300 4800 5500 4800
+Connection ~ 5300 4800
+Wire Wire Line
+	5500 4800 5500 4700
+Connection ~ 5400 4800
+Wire Wire Line
+	3475 3150 3425 3150
+Wire Wire Line
+	3425 3150 3425 3200
+Wire Wire Line
+	3875 3150 4025 3150
+Wire Wire Line
+	4300 3350 4550 3350
+Wire Wire Line
+	4300 3450 4550 3450
+Wire Wire Line
+	4300 3550 4550 3550
+Wire Wire Line
+	4550 3650 4300 3650
+Wire Wire Line
+	4300 2650 4550 2650
+Wire Wire Line
+	4300 2750 4550 2750
+Wire Wire Line
+	8350 3250 7250 3250
+Wire Wire Line
+	8350 3350 7250 3350
+Wire Wire Line
+	4300 3750 4550 3750
+Wire Wire Line
+	4300 3850 4550 3850
+Wire Wire Line
+	7250 3850 7450 3850
+Wire Wire Line
+	4300 2850 4550 2850
+Wire Wire Line
+	4550 2950 4300 2950
+Wire Wire Line
+	7450 2950 7250 2950
+Wire Wire Line
+	6400 2150 6400 1850
+Wire Wire Line
+	7250 3450 9300 3450
+Wire Wire Line
+	7250 3550 9300 3550
+Wire Wire Line
+	9025 3000 9225 3000
+Wire Wire Line
+	9100 3000 9100 2875
+Connection ~ 9100 3000
+Wire Wire Line
+	9025 3300 9025 3450
+Connection ~ 9025 3450
+Wire Wire Line
+	9225 3300 9225 3550
+Connection ~ 9225 3550
+Wire Wire Line
+	8150 3100 8150 3250
+Connection ~ 8150 3250
+Wire Wire Line
+	8300 3100 8300 3350
+Connection ~ 8300 3350
+Wire Wire Line
+	8150 2800 8150 2700
+Wire Wire Line
+	8150 2700 8300 2700
+Wire Wire Line
+	8300 2700 8300 2800
+Connection ~ 8200 2700
+Wire Wire Line
+	3250 4550 3450 4550
+Wire Wire Line
+	3450 4550 3450 4100
+Wire Wire Line
+	3425 5050 3425 4750
+Wire Wire Line
+	3425 4750 3250 4750
+Wire Wire Line
+	3250 4350 4425 4350
+Wire Wire Line
+	3250 4450 4350 4450
+Wire Wire Line
+	3250 4650 4050 4650
+Wire Wire Line
+	4050 4650 4050 5150
+Wire Wire Line
+	4050 5150 7375 5150
+Wire Wire Line
+	7375 5150 7375 3850
+Connection ~ 7375 3850
+Wire Wire Line
+	4350 4450 4350 3750
+Connection ~ 4350 3750
+Wire Wire Line
+	3250 4850 4475 4850
+Wire Wire Line
+	4475 4850 4475 3850
+Connection ~ 4475 3850
+Wire Wire Line
+	3425 5000 3125 5000
+Wire Wire Line
+	3125 5000 3125 5200
+Wire Wire Line
+	3125 5200 1850 5200
+Wire Wire Line
+	1850 5200 1850 5000
+Connection ~ 3425 5000
+Wire Wire Line
+	7400 3650 7250 3650
+Wire Wire Line
+	4550 3250 4425 3250
+Wire Wire Line
+	4425 3250 4425 4350
+Wire Wire Line
+	4325 3150 4550 3150
+$Comp
+L +3.3V #PWR046
+U 1 1 55A38E2B
+P 7425 2200
+F 0 "#PWR046" H 7425 2050 50  0001 C CNN
+F 1 "+3.3V" H 7425 2340 50  0000 C CNN
+F 2 "" H 7425 2200 60  0000 C CNN
+F 3 "" H 7425 2200 60  0000 C CNN
+	1    7425 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2650 7425 2650
+Wire Wire Line
+	7425 2650 7425 2200
+Text HLabel 7350 2850 2    60   Input ~ 0
+DMX_RECV_EN
+Wire Wire Line
+	7350 2850 7250 2850
+Text Notes 4350 2050 0    60   ~ 0
+Install a 32.768 kHz, 12.5 pF crystal to \nthe bottom side of the Teensy board\n(e.g. CFS-206)
+$EndSCHEMATC
